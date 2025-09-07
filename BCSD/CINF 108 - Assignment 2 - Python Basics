@@ -1,0 +1,65 @@
+# CINF 108 - Assignment 2 - Python Basics
+# Author: John Henriquez
+# Due: 09/06/2025
+
+# 1. Find sum and average of a list
+numbers = [8, 9, 10, 7, 6]
+total = sum(numbers)
+average = total / len(numbers)
+print("1. Sum:", total, "Average:", average)
+
+# 2. Convert Celsius to Kelvin
+celsius = 6
+kelvin = celsius + 273.15
+print("2. Kelvin:", kelvin)
+
+# 3. Check if string is a palindrome
+word = "madam"
+print("3. Is palindrome?", word == word[::-1])
+
+# 4. Reverse a string
+text = "Python"
+print("4. Reversed:", text[::-1])
+
+# 5. Concatenate list of names
+names = ["Alice", "Bob", "Charlie"]
+print("5. Concatenated:", " ".join(names))
+
+# 6. Check if string is a pangram
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+sentence = "The quick brown fox jumps over the lazy dog"
+is_pangram = all(letter in sentence.lower() for letter in alphabet)
+print("6. Is pangram?", is_pangram)
+
+# 7. Area and circumference of a circle
+radius = 5
+area = 3.14159 * radius ** 2
+circumference = 2 * 3.14159 * radius
+print("7. Area:", area, "Circumference:", circumference)
+
+# 8. Convert minutes to hours and minutes
+minutes = 135
+hours = minutes // 60
+remaining_minutes = minutes % 60
+print("8. Hours:", hours, "Minutes:", remaining_minutes)
+
+# 9. Count vowels in a string
+text2 = "Programming in Python"
+vowels = "aeiouAEIOU"
+count = 0
+for ch in text2:
+    if ch in vowels:
+        count += 1
+print("9. Vowel count:", count)
+
+# 10. Check if a number is prime
+n = 29
+is_prime = True
+if n < 2:
+    is_prime = False
+else:
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            is_prime = False
+            break
+print("10. Is prime?", is_prime)
